@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Stocks Widget</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+    .stock-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .stock {
+      position: relative;
+      background-color: #222;
+      padding: 15px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 150px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+    .stock:hover {
+      background-color: #333;
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #000;
+      border: 1px solid #555;
+      padding: 10px;
+      width: 300px;
+      z-index: 100;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .stock:hover .tooltip {
+      display: block;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Top AI-Driven NASDAQ Stocks</h2>
+  <div class="stock-list">
+    <div class="stock">
+      Apple (AAPL)
+      <div class="tooltip">
+        <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#symbol=NASDAQ%3AAAPL" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="stock">
+      Microsoft (MSFT)
+      <div class="tooltip">
+        <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#symbol=NASDAQ%3AMSFT" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="stock">
+      Nvidia (NVDA)
+      <div class="tooltip">
+        <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#symbol=NASDAQ%3ANVDA" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="stock">
+      Tesla (TSLA)
+      <div class="tooltip">
+        <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#symbol=NASDAQ%3ATSLA" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="stock">
+      Google (GOOGL)
+      <div class="tooltip">
+        <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#symbol=NASDAQ%3AGOOGL" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="stock">
+      Meta (META)
+      <div class="tooltip">
+        <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#symbol=NASDAQ%3AMETA" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="stock">
+      Amazon (AMZN)
+      <div class="tooltip">
+        <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#symbol=NASDAQ%3AAMZN" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
