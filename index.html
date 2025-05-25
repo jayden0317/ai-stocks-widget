@@ -3,90 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Stocks Widget</title>
+  <title>AI Stocks Table</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #0a0a0a;
-      color: #f4f4f4;
+      color: #ffffff;
       margin: 0;
-      padding: 30px;
+      padding: 40px;
     }
     h2 {
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 28px;
       color: #00ffc3;
+      margin-bottom: 30px;
     }
-    .stock-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .stock-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       gap: 30px;
+      justify-content: center;
     }
-    .stock {
-      background: linear-gradient(135deg, #1a1a1a, #222);
-      padding: 20px;
-      border-radius: 20px;
-      width: 400px;
-      box-shadow: 0 4px 10px rgba(0, 255, 200, 0.2);
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-    .stock:hover {
-      transform: translateY(-5px);
-      background: linear-gradient(135deg, #222, #333);
-    }
-    .widget-container {
-      width: 100%;
-      height: 220px;
+    .stock-frame {
+      background: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,255,200,0.2);
+      padding: 10px;
     }
     iframe {
       width: 100%;
-      height: 100%;
+      height: 220px;
       border: none;
       border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <h2>🔍 Live NASDAQ AI Stocks</h2>
-  <div class="stock-list">
-    <div class="stock">
-      <div class="widget-container">
-        <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:AAPL" loading="lazy"></iframe>
-      </div>
+  <h2>📊 AI-Related NASDAQ Stocks</h2>
+  <div class="stock-table">
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:NVDA" loading="lazy"></iframe>
     </div>
-    <div class="stock">
-      <div class="widget-container">
-        <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:MSFT" loading="lazy"></iframe>
-      </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:MSFT" loading="lazy"></iframe>
     </div>
-    <div class="stock">
-      <div class="widget-container">
-        <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:NVDA" loading="lazy"></iframe>
-      </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:GOOGL" loading="lazy"></iframe>
     </div>
-    <div class="stock">
-      <div class="widget-container">
-        <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:TSLA" loading="lazy"></iframe>
-      </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:AMZN" loading="lazy"></iframe>
     </div>
-    <div class="stock">
-      <div class="widget-container">
-        <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:GOOGL" loading="lazy"></iframe>
-      </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:META" loading="lazy"></iframe>
     </div>
-    <div class="stock">
-      <div class="widget-container">
-        <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:META" loading="lazy"></iframe>
-      </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:AAPL" loading="lazy"></iframe>
     </div>
-    <div class="stock">
-      <div class="widget-container">
-        <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:AMZN" loading="lazy"></iframe>
-      </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:TSLA" loading="lazy"></iframe>
+    </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:INTC" loading="lazy"></iframe>
+    </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:ADBE" loading="lazy"></iframe>
+    </div>
+    <div class="stock-frame">
+      <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=en#symbol=NASDAQ:CRM" loading="lazy"></iframe>
     </div>
   </div>
 </body>
 </html>
-    
